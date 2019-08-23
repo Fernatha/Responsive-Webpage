@@ -114,6 +114,54 @@ h3.title {
         padding: 15px 40px;
     }
 }
+hr{
+    width:150px;
+    height:2px;
+    background-color: #2196f3;
+    border:0;
+    margin: 40px auto;
+}
+/*----------------------------
+About
+----------------------------------*/
+div h3.title{
+    color: #131633;
+    text-transform:capitalize;
+    font-size:32px;
+    margin-bottom: 35px;
+    text-align:center;
+}
+#about{
+    padding: 10px;
+    background-color: #f7f7f7;
+    margin-bottom:20px;
+}
+#about #two-cols{
+ display:flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items:center;
+}
+.about-img{
+ border: 4px solid #84b9e4;
+ background-color:#84b9e4;
+}
+.about-bio{
+ width:65%;
+ max-width:L 800px;
+ line-height: 2;
+ margin-left:20px;
+}
+@media(max-width:600px){
+ #about, #two-cols{
+     flex-direction:column;
+ }
+ #about-bio{
+     margin-top:20px;
+     line-height:1.5;
+     text-align: left;
+ }
+}
 /*----------------------------
 FOOTER
 ----------------------------------*/
