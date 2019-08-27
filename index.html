@@ -8,14 +8,26 @@
     <link rel="shortcut icon" type="imgae/ico" href="images/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/baade8b357.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <style>
-
-    </style>
 </head>
 
 
 <body id="top">
+    <header>
+        <h2><a href="#" target="_blank"><img src="images/logo.png" alt=""</a></h2>
+        <nav>
+            <ul>
+                <li><a href="#top">Top</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#getting-around">Travel</a></li>
+                <li><a href="#quotes">Quotes</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#social-media">Links</a></li>
+        </ul>
+        </nav>
+    </header>
     <div id="hero">
         <div class="background-image"></div>
         <h1>Fernatha's Responzive Web Page project</h1>
@@ -46,49 +58,91 @@
             <li class="small" style="background-image: url('images/shark.jpg');"></li>
             <li class="large" style="background-image: url('images/tiger.png');"></li>
         </ul>
-        </div>
-        <hr>
-        <!-- ************************************************************************************* -->
-        <div id="getting-around">
-            <h3 class = "title"> Getting around</h3>
-            <p>How do you get around? persoanlly i choose these options which are totally within the average persons reach...</p>
-            <ul class="grid">
-                <li><i class = "fas fa-plane ico"></i><h4>Airplane</h4><p>Flying through the air on a plane nyoom nyoom</p></li>
-                <li><i class = "fas fa-ship ico"></i><h4>Cruise Ship</h4><p>Cruising through the water on a ship, boats are awesome!!!</p></li>
-                <li><i class = "fas fa-rocket ico"></i><h4>Rockets!!!!</h4><p>And I think it's gonna be a long long time.
+    </div>
+    <hr>
+    <!-- ************************************************************************************* -->
+    <div id="getting-around">
+        <h3 class="title"> Getting around</h3>
+        <p>How do you get around? persoanlly i choose these options which are totally within the average persons
+            reach...</p>
+        <ul class="grid">
+            <li><i class="fas fa-plane ico"></i>
+                <h4>Airplane</h4>
+                <p>Flying through the air on a plane nyoom nyoom</p>
+            </li>
+            <li><i class="fas fa-ship ico"></i>
+                <h4>Cruise Ship</h4>
+                <p>Cruising through the water on a ship, boats are awesome!!!</p>
+            </li>
+            <li><i class="fas fa-rocket ico"></i>
+                <h4>Rockets!!!!</h4>
+                <p>And I think it's gonna be a long long time.
                     'Till touch down brings me round again to find,
                     I'm not the man they think I am at home,
-                    Oh no no no I'm a rocket man!!!!!</p></li>
-            </ul>
-        </div>
+                    Oh no no no I'm a rocket man!!!!!</p>
+            </li>
+        </ul>
+    </div>
+    <!-- ************************************************************************************* -->
+    <div id="quotes">
         <hr>
-        <!-- ************************************************************************************* -->
-        <div id="quotes">
-            <h3 class="title">Things people totally say about me</h3>
-            <p class="portrait"><img src="images/tiger2.jpeg" alt="big kitty" class="portrait-photos"></p>
-            <p class="quote">&ldquo;He's amazing! best son, brother, nephew to ever be born!!!!&rdquo;</p>
-            <P class="author">&mdash; Family</P>
-            <p class="portrait"><img src="images/smile.jpeg" alt="smile" class="portrait-photos"></p>
-            <p class="quote">&ldquo;Who are you? Get away from me before i call the police!&rdquo;</p>
-            <P class="author">&mdash; Random person on the street</P>
-            <p class="portrait"><img src="images/coworker.jpg" alt="people" class="portrait-photos"></p>
-            <p class="quote">&ldquo;Who? oh yea him, he's alright i guess&rdquo;</p>
-            <P class="author">&mdash; Coworkers</P>
-        </div>
+        <h3 class="title">Things people totally say about me</h3>
+        <p class="portrait"><img src="images/tiger2.jpeg" alt="big kitty" class="portrait-photos"></p>
+        <p class="quote">&ldquo;He's amazing! best son, brother, nephew to ever be born!!!!&rdquo;</p>
+        <P class="author">&mdash; Family</P>
+        <p class="portrait"><img src="images/smile.jpeg" alt="smile" class="portrait-photos"></p>
+        <p class="quote">&ldquo;Who are you? Get away from me before i call the police!&rdquo;</p>
+        <P class="author">&mdash; Random person on the street</P>
+        <p class="portrait"><img src="images/coworker.jpg" alt="people" class="portrait-photos"></p>
+        <p class="quote">&ldquo;Who? oh yea him, he's alright i guess&rdquo;</p>
+        <P class="author">&mdash; Coworkers</P>
         <hr>
-        <!-- ************************************************************************************* -->
-        <footer id="social-media">
-            <ul>
-                <li><a href="https://github.com/Fernatha" target="_blank"><i class="fab fa-twitter-square"></a></i></a></li>
-                <li><a href="https://github.com/Fernatha" target="_blank"><i class="fab fa-facebook-square"></a></i></a></li>
-                <li><a href="https://github.com/Fernatha" target="_blank"><i class="fab fa-youtube-square"></i></a></li>
-                <li><a href="https://github.com/Fernatha" target="_blank"><i class="fab fa-github-square"></i></a></li>
-            </ul>
-            <p>&copy;
-                <script>document.write(new Date().getFullYear());</script> It sure is fun create websites.</p>
-            <p>&ldquo;Tell me and I forget, teach me and I may remember, involve me and I learn.&rdquo;
-                &mdash;Benjamin Franklin</p>
-        </footer>
+    </div>
+    <!-- ************************************************************************************* -->
+    <div id="contact">
+        <h3 class="title">My location</h3>
+        <section class="flexbox-section">
+            <p>
+                <!--Big ol' hyperlink yay-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.269088003966!2d-79.38924438427726!3d43.64256956113569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d68a18c4c7%3A0x4bc3e6c710a8a933!2sCN%20Tower%2C%20301%20Front%20St%20W%2C%20Toronto%2C%20ON%20M5V%202T6!5e0!3m2!1sen!2sca!4v1566878726183!5m2!1sen!2sca"
+                    width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </p>
+            <p>Wouldn't you like to know eh?</p>
+        </section>
+    </div>
+    <!-- ************************************************************************************* -->
+    <div id="contact-form">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdpVmNAt0KA_VXb6cm-54mwQRwHu6IBnyspytvLcTGL2sqIlQ/viewform?embedded=true" 
+            width="100%" height="1250" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+    <!-- ************************************************************************************* -->
+    <footer id="social-media">
+        <ul>
+            <li><a href="https://github.com/Fernatha" target="_blank"><i class="fab fa-twitter-square"></a></i></a></li>
+            <li><a href="https://github.com/Fernatha" target="_blank"><i class="fab fa-facebook-square"></a></i></a></li>
+            <li><a href="https://github.com/Fernatha" target="_blank"><i class="fab fa-youtube-square"></i></a></li>
+            <li><a href="https://github.com/Fernatha" target="_blank"><i class="fab fa-github-square"></i></a></li>
+        </ul>
+        <p>&copy;
+            <script>document.write(new Date().getFullYear());</script> It sure is fun create websites.</p>
+        <p>&ldquo;Tell me and I forget, teach me and I may remember, involve me and I learn.&rdquo;
+            &mdash;Benjamin Franklin</p>
+    </footer>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('a[href^="#"]').on('click',function (e) {e.preventDefault();
+    
+            var target = this.hash;
+            var $target = $(target);
+    
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top-100
+            }, 900, 'swing', function () {
+                window.location.hash = target-100;
+            });
+               });
+    });
+    </script>
 </body>
 
 </html>
