@@ -1,0 +1,11 @@
+{
+    "version": "2.0.0",
+    "command": "chrome",    
+    "windows": {
+        "command": "explorer.exe"
+    },
+    "args": [
+        "css-grid.html"
+    ],
+    "problemMatchers": []
+}
