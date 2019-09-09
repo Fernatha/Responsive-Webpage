@@ -12,40 +12,39 @@ body{
 }
 header{
     grid-area:header;
-    background-color:dimgray;
 }
 nav{
     grid-area:nav;
-    background-color:violet;
 }
 #login{
     grid-area:login;
-background-color:red;
+
 }
 
 #enhance{
     grid-area:enhance;
-    background-color:blue;
+    
 }
 #stats{
     grid-area:stats;
-    background-color:green;
+    
 }
 #apps{
     grid-area:apps;
-    background-color:goldenrod;
+    
 }
 #games{
     grid-area:games;
-    background-color:chocolate;
+    
 }
 #websites{
     grid-area:websites;
-    background-color:mediumaquamarine;
+    
 }
 footer{
     grid-area: footer;
-    background-color: crimson;
+    margin: 20px 0;
+    text-align: center;
 }
 @media screen and (min-width:1100px){
     main{
@@ -114,4 +113,37 @@ footer{
         "websites"
         "footer";
     }
+}
+header h1{
+    font-size:3.25em;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #22638e;
+}
+.options{
+    width:95%;
+    background-color: white;
+    padding: 10px;
+    border-top: 3px solid #3498db;
+    border-radius:3px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.options-link{
+    text-decoration: none;
+    font-size: 0.9em;
+    color:#3498db;
+}
+.options-link:hover{
+  color:darkgreen;
+  text-decoration: underline;
+}
+.card{
+    background-color: white;
+}
+.card-blue{
+    background-color: #9ebcf5;
 }
