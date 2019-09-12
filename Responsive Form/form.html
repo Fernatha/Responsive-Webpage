@@ -1,34 +1,178 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <Title>Responive web forms</Title>
-        <style>
-        
+
+<head>
+    <meta charset="UTF-8">
+    <Title>Responive web forms</Title>
+    <style>
+        body{
+                font-family: 'Arial', sans-serif;
+                background-color: cadetblue;
+                background: linear-gradient(90deg, cadetblue, #5085a0);
+                margin: 20px;
+            }
+            #divwrapper, fieldset{
+                background-color: aliceblue;
+                max-width: 900px;
+                min-height: 100px;
+                border-radius: 10px;
+                padding: 2%;
+                margin: 0 auto 10px;
+            }
+            #formwrapper{
+                display: flex;
+                flex-direction: row;
+            }
+
+            #leftcol{
+                width: 50%;
+                padding: 1%;
+            }
+            #rightcol{
+                width: 50%;
+                padding: 1%;
+            }
+            #rightcol fieldset p{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            footer{
+                text-align: center;
+            }
+            #leftcol fieldset p{
+                display:flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+            }
+            #leftcol input{
+                width:90%;
+                padding: 5px;
+                margin: 0 auto;
+                margin-bottom: 10px;
+            }
+            @media(max-width:900px){
+                #formwrapper{
+                    flex-direction: column;
+                }
+                #leftcol{
+                    width: 100%;
+                    padding: 0;
+                }
+                #rightcol{
+                    width: 100%;
+                    padding: 0;
+                }
+            }
         </style>
-    </head>
-    <body>
-        <div id="divwrapper">
-            <h2>My Form</h2>
-            <form id="formwrapper">
-                <section id="leftcol">
-                    <fieldset>
-                        <legend>block one</legend>
-                    </fieldset>
-                    <fieldset>
-                        <legend>block two</legend>
-                    </fieldset>
-                </section>
-                <section id="rightcol">
-                    <fieldset>
-                        <legend>block three</legend>
-                    </fieldset>
-                    <fieldset>
-                        <legend>block four</legend>
-                    </fieldset>
-                </section>
-            </form>
-        </div>
-        <footer><img src="images/logo.png" alt="logo"></footer>
-    </body>
+</head>
+
+<body>
+    <div id="divwrapper">
+        <h2>My Form</h2>
+        <form id="formwrapper">
+            <section id="leftcol">
+                <fieldset>
+                    <legend>Block one</legend>
+                    <p>
+                        <input id="firstname" name="firstname" type="text" placeholder="First Name" autofocus required
+                            tabindex="1">
+                        <input id="lastname" name="lastname" type="text" placeholder="Last Name" required tabindex="2">
+                        <input id="email" name="email" type="email" placeholder="123@email.com" required tabindex="3">
+                        <input id="url" name="url" type="url" placeholder="URL" tabindex="4">
+                    </p>
+                    <p>
+                        <label for="username">Username:</label>
+                        <input id="username" name="username" type="text" tabindex="5">
+
+                        <label for="password">Password:</label>
+                        <input id="password" name="password" type="password" tabindex="6">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Block two</legend>
+                    <p>
+                        <input id="address1" name="address1" type="text" placeholder="Address 1">
+                        <input id="address2" name="address2" type="text" placeholder="Address 2">
+                        <input id="city" name="city" type="text" placeholder="City">
+                        <input id="postal" name="postal" type="text" placeholder="Postal Code">
+                    </p>
+                    <p>
+                        <select>
+                            <optgroup label="Capital">
+                                <option>Edmonton</option>
+                                <option>Victoria</option>
+                                <option>Winnipeg</option>
+                                <option>Fredericton</option>
+                                <option>St. Johns</option>
+                                <option>Halifax</option>
+                                <option>Toronto</option>
+                                <option>Charlottetown</option>
+                                <option>Quebec City</option>
+                                <option>Regina</option>
+                                <option>White Horse</option>
+                                <option>Iqaluit</option>
+                                <option>YellowKnife</option>
+                            </optgroup>
+                            <optgroup label="Other City">
+                                <option>Calgary</option>
+                                <option>Vancouver</option>
+                                <option>Moncton</option>
+                                <option>Ottawa</option>
+                                <option>Montreal</option>
+                                <option>Saskatoon</option>
+                            </optgroup>
+                        </select>
+                        <select name="province" name="province">
+                            <option value="" selected="selected">Calgary</option>
+                            <option value="AB">Calgary</option>
+                            <option value="BC">British Columbia</option>
+                            <option value="MB">Manitoba</option>
+                            <option value="NB">New Brunswick</option>
+                            <option value="NL">Newfoundland and Labrador</option>
+                            <option value="NS">Nova Scotia</option>
+                            <option value="ON">Ontario</option>
+                            <option value="PE">Prince Edward Island</option>
+                            <option value="QC">Quebec</option>
+                            <option value="SK">Saskatchewan</option>
+                            <option value="YT">Northwest Territories</option>
+                            <option value="NU">Nunavut</option>
+                            <option value="NT">Yukon</option>
+                        </select>
+                    </p>
+                </fieldset>
+            </section>
+            <section id="rightcol">
+                <fieldset>
+                    <legend>Block three</legend>
+                    <p>
+                        <span><input type="radio" name="color" value="red" checked>Red</span>
+                        <span><input type="radio" name="color" value="blue">Blue</span>
+                        <span><input type="radio" name="color" value="green">Green</span>
+                        <span><input type="radio" name="color" value="yellow">Yellow</span>
+                        <span><input type="radio" name="color" value="pink">Pink</span>
+                        <span><input type="radio" name="color" value="purple">Purple</span>
+                    </p>
+                    <p>
+                        <span><input type="checkbox" name="fruit" value="apple">Apple</span>
+                        <span><input type="checkbox" name="fruit" value="pear">Pear</span>
+                        <span><input type="checkbox" name="fruit" value="orange">Orange</span>
+                        <span><input type="checkbox" name="fruit" value="banana">Banana</span>
+                        <span><input type="checkbox" name="fruit" value="strawberry">Strawberry</span>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Block four</legend>
+                    <textarea rows="4" cols="40" placeholder="What did you do today?(i don't really care)"></textarea>
+                    <p><input type="submit" value="Submit"></p>
+                </fieldset>
+            </section>
+
+        </form>
+    </div>
+    <footer><img src="images/logo.png" alt="logo"></footer>
+</body>
+
 </html>
